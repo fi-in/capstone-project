@@ -1,6 +1,12 @@
 const whitelist = [
+    ".gov",
     "google.com",
-    "ncedcloud.org"
+    "ncedcloud.org",
+    "classlink.com",
+    "cmsk12.org",
+    "instructure.com",
+    "edpuzzle.com",
+    "masteryconnect.com"
 ];
 
 chrome.tabs.onUpdated.addListener(function (tabId, changeInfo, tab) {
