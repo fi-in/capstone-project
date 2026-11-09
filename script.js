@@ -1,6 +1,6 @@
 const whitelist = [
     "google.com",
-    "ncedcloud.org"
+    "*.ncedcloud.org"
 ];
 
 chrome.tabs.onUpdated.addListener(function (tabId, changeInfo, tab) {
