@@ -1,0 +1,10 @@
+{
+  "manifest_version": 3,
+  "name": "Stay on task!",
+  "version": "1.0",
+  "description": "Set a custom whitelist of allowed sites, all other sites will be closed.",
+  "permissions": ["tabs"],
+  "background": {
+    "service_worker": "script.js"
+  }
+}
