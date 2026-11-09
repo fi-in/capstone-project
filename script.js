@@ -9,6 +9,7 @@ if (!changeInfo.url) {return;} // if something changed that wasn't the url, no n
 if (!tab.url.startsWith("http")) {return;} // sites that don't start with http will be excluded
 
 const hostName = new URL(tab.url).hostname; // picks out the main part of the domain to check it
+console.log(hostName);
 
 if (!whitelist.includes(hostName)) { // if the hostName is not on the whitelist, close that tab
     chrome.tabs.remove(tabId)
